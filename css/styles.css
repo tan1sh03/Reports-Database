@@ -1,0 +1,112 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.5rem;  /* Standardized padding */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 1200px;
+    flex-grow: 1;  /* Allows the main content to grow and push the footer down */
+}
+
+/* Categories Section */
+#categories-list {
+    text-align: center;
+}
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.category-item {
+    background-color: #fff;
+    padding: 1.5rem; /* Increased padding */
+    margin: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(33.333% - 1rem); /* Three items per row */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.category-item h3 {
+    margin-bottom: 1rem; /* Margin between heading and button */
+}
+
+.category-item a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.7rem 1.5rem;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;  /* Standardized padding */
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 1rem;  /* Standardized font size */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .category-item {
+        width: calc(50% - 1rem); /* Two items per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .category-item {
+        width: 100%; /* One item per row on extra small screens */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

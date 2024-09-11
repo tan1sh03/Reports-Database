@@ -1,0 +1,119 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;  /* Standardized padding */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Category Name */
+#category-name {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#category-name h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Main Content */
+main {
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+#reports-list {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.reports-container {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#reports-list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;  /* Standardized padding */
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 1rem;  /* Standardized font size */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Main content wrapper */
+main {
+    flex-grow: 1;  /* Allows the main content to grow and push the footer down */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    #category-name h2 {
+        font-size: 1.8rem;
+    }
+
+    #reports-list {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #category-name h2 {
+        font-size: 1.6rem;
+    }
+
+    #reports-list h3 {
+        font-size: 1.3rem;
+    }
+}

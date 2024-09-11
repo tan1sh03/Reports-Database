@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Upload Report</title>
+    <link rel="stylesheet" href="css/upload-report-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Report Database</h1>
+    </header>
+    <main>
+        <form action="/upload" method="post" enctype="multipart/form-data"></form>
+            <label for="reportTitle">Report Title:</label>
+            <input type="text" id="reportTitle" name="reportTitle" required>
+
+            <label for="category">Select Category:</label>
+            <select id="category" name="category" required>
+                <option value="finance">Finance</option>
+                <option value="technology">Marketing</option>
+                <option value="health">Engineering</option>
+            </select>
+
+            <label for="reportFile">Upload Report:</label>
+            <input type="file" id="reportFile" name="reportFile" required>
+
+            <button type="submit">Upload</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Report Database. All rights reserved.</p>
+    </footer>
+</body>
+</html>
